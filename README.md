@@ -7,14 +7,14 @@
   </tr>
   <tr>
     <td>Linked Lists</td>
-    <td>Singly linked list</td>
+    <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Linked%20lists/Singly%20linked%20list">Singly linked list</a></td>
   </tr>
   <tr>
     <td></td>
-    <td>Circular linked list</td>
+    <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Linked%20lists/Circular%20linked%20list">Circular linked list</a></td>
   </tr>
   <tr>
     <td></td>
-    <td>Doubly linked list</td>
+    <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Linked%20lists/Doubly%20linked%20list">Doubly linked list</a></td>
   </tr>
 </table>
