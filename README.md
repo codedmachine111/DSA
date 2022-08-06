@@ -1,5 +1,7 @@
 <h1>DSA</h1>
 <br>
+<p>Data Structure and Algorithm [BASICS] in C.</p>
+<br>
 <table>
   <tr>
     <th>Topics</th>
