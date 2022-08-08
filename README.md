@@ -20,7 +20,15 @@
     <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Linked%20lists/Doubly%20linked%20list">Doubly linked list</a></td>
   </tr>
   <tr>
+    <td></td>
+    <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Hackerrank%20practice%20problems/linked_lists">Hackerrank problems</a></td>
+  </tr>
+  <tr>
   <td>Stacks</td>
   <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Stacks">Stack operations</a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Hackerrank%20practice%20problems/stacks">Hackerrank problems</a></td>
   </tr>
 </table>
