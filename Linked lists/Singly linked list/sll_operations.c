@@ -212,6 +212,7 @@ void search_node(struct node* head){
 struct node* search_and_delete(struct node* head){
     struct node* cur;
     struct node* prev;
+    struct node* temp;
     int status=0, key;
     printf("Enter key to find and delete\n");
     scanf("%d",&key);
@@ -219,8 +220,7 @@ struct node* search_and_delete(struct node* head){
         printf("Linked list empty\n");
     }
     else if(head->data == key){
-        free(head);
-        head=NULL;
+        head=delete_front(head);
     }
     else{
         prev=NULL;
@@ -302,7 +302,7 @@ int main()
                     break;
             case 9: search_node(head);
                     break;
-            case 10: search_and_delete(head);
+            case 10: head =search_and_delete(head);
                     break;
             case 11:
                 exit(0);
