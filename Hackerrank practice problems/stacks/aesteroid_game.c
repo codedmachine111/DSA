@@ -46,30 +46,65 @@ void display(struct stack* sptr)
         printf("\n");
     }
 }
+
+int peek(struct stack* sptr)
+{
+    int num;
+    if(sptr->top== -1)
+    {
+        printf("Empty stack \n");
+    }
+    else
+    {
+       num =sptr->data[sptr->top];
+    }
+    return num;
+}
+
 void check_collision(struct stack* s1ptr, struct stack* s2ptr)
 {
     int status;
     int c_count=0, n_count=0;
-    for(int i=s1ptr->top; i>=0; i--)
+    int n1,n2;
+    while(s1ptr->top!=-1 && s2ptr->top!=-1)
     {
-        if(s1ptr->data[i]>0 && s2ptr->data[i]>0)
-        {
-            status=0;
+        n1=peek(s1ptr);
+        n2=peek(s2ptr);
+        if(n1>0 && n2>0){
             n_count++;
+            printf("0 ");
+            pop(s1ptr);
+            pop(s2ptr);
         }
-        else if(s1ptr->data[i]<0 && s2ptr->data[i]<0)
-        {
-            status=0;
+        else if(n1<0 && n2<0){
             n_count++;
+            printf("0 ");
+            pop(s1ptr);
+            pop(s2ptr);
         }
-        else
-        {
-            status = 1;
+        else if(n1<0 && n2>0){
             c_count++;
+            printf("1 ");
+            pop(s1ptr);
+            pop(s2ptr);
         }
-        printf("%d ",status);
+        else if(n1>0 && n2<0){
+            c_count++;
+            printf("1 ");
+            pop(s1ptr);
+            pop(s2ptr);
+        }
+        else{
+            if(n1 == 0){
+                pop(s1ptr);
+            }
+            if(n2 == 0){
+                pop(s2ptr);
+            }
+        }
     }
-    printf("%d ",c_count);
+    printf("\n");
+    printf("%d \n",c_count);
     printf("%d ",n_count);
 }
 int main()
@@ -85,19 +120,16 @@ int main()
     s2ptr->top = -1;
 
     int s1,s2;
-    printf("Enter the number of colls\n");
     scanf("%d",&num);
     if(num>0)
     {
         for(int i=0; i<num; i++)
         {
-            printf("Enter size for s1\n");
             scanf("%d",&s1);
             push(s1ptr,s1);
         }
         for(int i=0; i<num; i++)
         {
-            printf("Enter size for s2\n");
             scanf("%d",&s2);
             push(s2ptr,s2);
         }
@@ -105,7 +137,7 @@ int main()
     }
     else
     {
-        printf("Invalid input.");
+        printf("Invalid input");
     }
 
 }
