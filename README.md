@@ -31,4 +31,8 @@
     <td></td>
     <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Hackerrank%20practice%20problems/stacks">Hackerrank problems</a></td>
   </tr>
+  <tr>
+  <td>Queues</td>
+  <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Queues">Queue operations</a></td>
+  </tr>
 </table>
