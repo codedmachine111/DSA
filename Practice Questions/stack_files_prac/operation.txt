@@ -1,0 +1,13 @@
+Pushed 7
+Pushed 73
+Pushed 95
+Pushed 89
+Popped 89
+Popped 95
+Pushed 84
+Pushed 90
+Pushed 28
+Pushed 58
+Pushed 39
+Popped 39
+Popped 58
