@@ -36,3 +36,7 @@
   <td><a href="https://github.com/codedmachine111/DSA/tree/boss/Queues">Queue operations</a></td>
   </tr>
 </table>
+
+## Contribution
+
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, please submit a pull request or open an issue on the GitHub repository.
